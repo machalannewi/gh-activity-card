@@ -2,6 +2,8 @@
 
 `gh-activity-card` is a React component that displays a user's recent GitHub activity in a card format. It's built with Next.js.
 
+![Preview](https://github.com/Kashyap1ankit/gh-activity-card/blob/main/public/sample-1.png)
+
 ## Features
 
 - **Recent Activity**: Showcases the latest public events from a specified GitHub user from 01/01/2024 -- 26/12/2024.
