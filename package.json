@@ -2,7 +2,7 @@
   "name": "gh-activity-card",
   "version": "1.0.0",
   "description": "Create your github contribution card with just one import",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
