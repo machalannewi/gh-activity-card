@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# gh-activity-card
 
-## Getting Started
+`gh-activity-card` is a React component that displays a user's recent GitHub activity in a card format. It's built with Next.js.
 
-First, run the development server:
+## Features
+
+- **Recent Activity**: Showcases the latest public events from a specified GitHub user from 01/01/2024 -- 26/12/2024.
+- **Responsive Design**: Ensures compatibility across various device sizes.
+- **Customizable**: Allows for styling adjustments to match your application's theme.
+
+## Installation
+
+Install the package using npm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install gh-activity-card
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Or with yarn:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn add gh-activity-card
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+First, import the component into your React application:
 
-To learn more about Next.js, take a look at the following resources:
+```jsx
+import GhActivityCard from "gh-activity-card/components/gh-activity-card";
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then, use the component in your JSX:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```jsx
+function App() {
+  return (
+    <div>
+      <GhActivityCard username="kashyap1ankit" />
+    </div>
+  );
+}
+```
 
-## Deploy on Vercel
+Replace `"kashyap1ankit"` with the GitHub username whose activity you want to display.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Props
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Prop       | Type   | Description                             | Required |
+| ---------- | ------ | --------------------------------------- | -------- |
+| `username` | string | GitHub username to fetch activity from. | Yes      |
+
+## Styling
+
+The component uses Geist UI for styling. You can customize the appearance by overriding the default styles or by providing your own CSS classes.
+
+## Development
+
+To contribute or modify the component, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Kashyap1ankit/gh-activity-card.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd gh-activity-card
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   pnpm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to see the component in action.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [GitHub REST API](https://docs.github.com/en/rest)
+
+For any issues or feature requests, please open an issue on the [GitHub repository](https://github.com/Kashyap1ankit/gh-activity-card.git).

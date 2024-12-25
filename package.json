@@ -1,7 +1,15 @@
 {
   "name": "gh-activity-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create your github contribution card with just one import",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kashyap1ankit/gh-activity-card"
+  },
+  "bugs": {
+    "url": "https://github.com/Kashyap1ankit/gh-activity-card/issues"
+  },
+  "homepage": "https://github.com/Kashyap1ankit/gh-activity-card#readme",
   "private": false,
   "scripts": {
     "dev": "next dev",
