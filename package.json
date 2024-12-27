@@ -1,6 +1,6 @@
 {
   "name": "gh-activity-card",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Create your github contribution card with just one import",
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-activity-calendar": "^2.7.5",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

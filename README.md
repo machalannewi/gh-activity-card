@@ -3,6 +3,7 @@
 `gh-activity-card` is a React component that displays a user's recent GitHub activity in a card format. It's built with Next.js.
 
 ![Preview](https://github.com/Kashyap1ankit/gh-activity-card/blob/main/public/sample-1.png)
+![Preview](https://github.com/Kashyap1ankit/gh-activity-card/blob/main/public/code-sample-2.png)
 
 ## Features
 
@@ -38,6 +39,16 @@ Then, use the component in your JSX:
 function App() {
   return (
     <div>
+      <GhActivityCard
+        username="kashyap1ankit"
+        colorScheme={{
+          light: ["red", "red", "red", "red", "red"],
+          dark: ["white", "white", "white", "white", "white"],
+        }}
+        colorTheme="light"
+        errorClassName="text-red-500"
+        className="border-2  mt-2"
+      />
       <GhActivityCard username="kashyap1ankit" />
     </div>
   );
@@ -48,9 +59,13 @@ Replace `"kashyap1ankit"` with the GitHub username whose activity you want to di
 
 ## Props
 
-| Prop       | Type   | Description                             | Required |
-| ---------- | ------ | --------------------------------------- | -------- |
-| `username` | string | GitHub username to fetch activity from. | Yes      |
+| Prop             | Type   | Description                                        | Required |
+| ---------------- | ------ | -------------------------------------------------- | -------- |
+| `username`       | string | GitHub username to fetch activity from.            | Yes      |
+| `className`      | string | ClassName to customize styling.                    | No       |
+| `errorClassName` | string | ClassName to customize styling error message.      | No       |
+| `colorTheme`     | string | Theme can be light or dark                         | No       |
+| `colorScheme`    | string | To define colors want in graph. Must be array of 5 | No       |
 
 ## Styling
 
