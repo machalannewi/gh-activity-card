@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ActivityCalendar } from "react-activity-calendar";
 import { twMerge } from "tailwind-merge";
 
+
 export default function GhActivityCard({
   username,
   className,
@@ -21,6 +22,8 @@ export default function GhActivityCard({
 }) {
   const [data, setData] = useState<null | []>(null);
   const [loading, setLoading] = useState<boolean>(false);
+  
+
   //eslint-disable-next-line
   const [_, setError] = useState<boolean>(false);
   useEffect(() => {
@@ -73,6 +76,9 @@ export default function GhActivityCard({
                   dark: ["#EBEDF0", "#9BE9A7", "#6CC565", "#58A250", "#3A6E3A"],
                 }
               }
+              labels={{
+                totalCount: "{{count}} activities in the last year",
+              }}
             />
           ) : (
             <p className={twMerge("text-white", errorClassName)}>
@@ -84,3 +90,5 @@ export default function GhActivityCard({
     </div>
   );
 }
+
+
