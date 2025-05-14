@@ -7,7 +7,7 @@
 
 ## Features
 
-- **Recent Activity**: Showcases the latest public events from a specified GitHub user from 01/01/2024 -- 26/12/2024.
+- **Recent Activity**: Showcases the latest public events from a specified GitHub user in the past year 
 - **Responsive Design**: Ensures compatibility across various device sizes.
 - **Customizable**: Allows for styling adjustments to match your application's theme.
 
